@@ -8,6 +8,24 @@
     type: 'container',
     target: document.getElementById('pdf-viewer'),
     src: 'Momentum 26 UK Consumer.pdf',
-    theme: { preference: 'system' }
+    theme: {
+    preference: 'system',
+    light: {
+      accent: {
+        primary: '#9333ea',        // Main brand color
+        primaryHover: '#7e22ce',   // Hover state
+        primaryActive: '#6b21a8',  // Click state
+        primaryLight: '#f3e8ff',   // Subtle backgrounds (e.g., selection)
+        primaryForeground: '#fff'  // Text on top of primary color
+      }
+    },
+    dark: {
+      accent: {
+        primary: '#a855f7',        // Lighter purple for dark mode
+        primaryHover: '#9333ea',
+        // ... other states
+      }
+    }
+  }
   });
 </script>
